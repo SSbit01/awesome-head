@@ -5,13 +5,13 @@
  __| H T M L |__
 |_______________|
    |    |_|| |
-   |         _\
+   | (       _\
    \      \__|
     \_     __|
       |   |
 ```
 
-The best and most up-to-date compilation of HTML head tags. if you find missing or redundant tags, please feel free to contribute.
+The best and most up-to-date compilation of HTML head tags.
 
 ## List
 
@@ -20,6 +20,8 @@ See [`base.html`](./base.html).
 Of course, many web pages do not need the Highwire Press or the Bitcoin address meta tags; use only the necessary ones.
 
 All tags are written in XHTML format to ensure compatibility with modern frameworks and template engines, which often require every tag to be explicitly closed. Although HTML5 technically doesn't support self-closing syntax, it tolerates the trailing slash and simply ignores it, allowing the document to render without errors.
+
+If you find missing or redundant tags, please feel free to contribute.
 
 ## Sources
 
