@@ -4,11 +4,11 @@
     _________
  __| H T M L |__
 |_______________|
-  |    |_|| |
-  |         _\
-  \      \__|
-   \_     __|
-     |   |
+   |    |_|| |
+   |         _\
+   \      \__|
+    \_     __|
+      |   |
 ```
 
 The best and most up-to-date compilation of HTML head tags. if you find missing or redundant tags, please feel free to contribute.
