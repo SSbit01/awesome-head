@@ -1,0 +1,473 @@
+<!-- STANDARD -->
+
+<meta charset="utf-8" />
+
+
+<!-- CSS Device Adaptation specification: https://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<!-- HTML Standard metadata names: https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name#meta_names_defined_in_the_html_specification -->
+<meta name="application-name" content={name} />
+<meta name="author" content={author} />
+<meta name="color-scheme" content={colorScheme} />
+<meta name="description" content={description} />
+<meta name="generator" content={generator} />
+<meta name="keywords" content={keywords} />
+<meta name="referrer" content={referrer} />
+<meta name="theme-color" content={themeDark} />
+<meta name="theme-color" content={themeLight} media="(prefers-color-scheme: light)" />
+
+
+<!-- Link rel: https://html.spec.whatwg.org/multipage/links.html#linkTypes https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel -->
+
+<link rel="alternate" hreflang={hrefLang} href={hrefAlternate} />
+
+<link rel="author" href={hrefAuthor} />
+
+<link rel="bookmark" href="https://example.com/important-article" />
+
+<link rel="canonical" href={canonical} />
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/compression-dictionary -->
+<link rel="compression-dictionary" href={hrefCompressionDictionary} />
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/dns-prefetch -->
+<link rel="dns-prefetch" href={hrefDnsPrefetch} />
+
+<link rel="expect" href={hrefExpect} blocking="render" />
+
+<link rel="help" href={hrefHelp} />
+
+<!-- Multiple icons are recommended, this is just an example: -->
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+
+<link rel="license" href={hrefLicense} />
+
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Example: Linking other profiles, useful for profiles (multiple "me" tags can be used) -->
+<link rel="me" href={hrefMe} />
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/modulepreload -->
+<link rel="modulepreload" href={hrefModulePreload} />
+
+<link ref="next" href={hrefNext} />
+
+<!-- https://www.hixie.ch/specs/pingback/pingback -->
+<link ref="pingback" href={hrefPingback} />
+
+<!-- Multiple `preconnect` tags are allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preconnect -->
+<link rel="preconnect" href={hrefPreconnect} />
+
+<!-- Multiple `prefetch` tags are allowed -->
+<link rel="prefetch" href={hrefPrefetch} />
+
+<!-- Multiple `preload` tags are allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload -->
+<link rel="preload" href={hrefPreload} as="script" />
+
+<link rel="prev" href={hrefPrev} />
+
+<link rel="privacy-policy" href={hrefPrivacyPolicy} />
+
+<link rel="search" href={hrefSearch} />
+
+<!-- Multiple `stylesheet` tags are allowed -->
+<link rel="stylesheet" href={hrefStylesheet} />
+
+<link rel="terms-of-service" href={hrefTermsOfService} />
+
+
+<!-- Title: https://html.spec.whatwg.org/multipage/semantics.html#the-title-element https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title -->
+<title>{title}</title>
+
+
+
+<!-- APPLE -->
+
+<!-- https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners -->
+<meta name="apple-itunes-app" content={appleItunesApp} />
+
+
+<!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content={appleMobileWebAppStatusBarStyle} />
+<meta name="apple-mobile-web-app-title" content={name} />
+
+
+<!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+<meta name="format-detection" content="telephone=no" />
+
+
+<!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon-80x80.png" sizes="80x80" type="image/png" />
+<link rel="apple-touch-icon" href="/touch-icon-iphone.png" type="image/png" />
+<link rel="apple-touch-icon" href="/touch-icon-ipad.png" sizes="152x152" type="image/png" />
+<link rel="apple-touch-icon" href="/touch-icon-ipad-retina.png" sizes="167x167" type="image/png" />
+<link rel="apple-touch-icon" href="/touch-icon-iphone-retina.png" sizes="180x180" type="image/png" />
+<link rel="apple-touch-startup-image" href="/launch.png" />
+
+<!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html -->
+<link rel="mask-icon" href="/website_icon.svg" color={maskIconColor} type="image/svg+xml" />
+
+
+
+<!-- PREVISUALIZATION -->
+
+<!--
+https://ogp.me/
+The reference specifies more tags; these are the basic ones:
+-->
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:site_name" content={name} />
+<meta property="og:title" content={title} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+
+
+<!--
+https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards
+https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
+https://developer.x.com/en/docs/x-for-websites/cards/overview/app-card
+https://v5.chriskrycho.com/notes/the-twitter-label-and-twitter-data-meta-tags
+The reference specifies the `twitter:player` tags; add them only if the page has or is related to a video:
+-->
+<!-- Use this tag to specify to Twitter/X to search for your app in a country other than the US: <meta name="twitter:app:country" content={twitterAppCountry} /> -->
+<meta name="twitter:app:id:googleplay" content={twitterAppIdGooglePlay} />
+<meta name="twitter:app:id:ipad" content={twitterAppIdIpad} />
+<meta name="twitter:app:id:iphone" content={twitterAppIdIphone} />
+<meta name="twitter:app:name:googleplay" content={twitterAppNameGooglePlay} />
+<meta name="twitter:app:name:ipad" content={twitterAppNameIpad} />
+<meta name="twitter:app:name:iphone" content={twitterAppNameIphone} />
+<meta name="twitter:app:url:googleplay" content={twitterAppUrlGooglePlay} />
+<meta name="twitter:app:url:ipad" content={twitterAppUrlIpad} />
+<meta name="twitter:app:url:iphone" content={twitterAppUrlIphone} />
+<meta name="twitter:card" content={twitterCard} />
+<meta name="twitter:creator" content={twitterCreator} />
+<meta name="twitter:creator:id" content={twitterCreatorId} />
+<meta name="twitter:data1" content={twitterData1} />
+<meta name="twitter:data2" content={twitterData2} />
+<meta name="twitter:description" content={platformDescription} />
+<meta name="twitter:image" content={twitterImage} />
+<meta name="twitter:image:alt" content={twitterImageAlt} />
+<meta name="twitter:label1" content={twitterLabel1} />
+<meta name="twitter:label2" content={twitterLabel2} />
+<meta name="twitter:site" content={twitterSite} />
+<meta name="twitter:site:id" content={twitterSiteId} />
+<meta name="twitter:title" content={title} />
+
+
+
+<!-- SEARCH ENGINE CONFIGURATIONS -->
+
+<!-- https://www.robotstxt.org/meta.html -->
+<meta name="robots" content={robots} />
+
+
+<!-- Google -->
+
+<!-- https://developers.google.com/search/docs/crawling-indexing/special-tags -->
+<meta name="google" content="nopagereadaloud" />
+<meta name="googlebot" content="notranslate" />
+
+<!-- https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag -->
+<meta name="googlebot-news" content={googleBotNews} />
+
+<!-- It is recommended to use JSON-LD instead (also, this tag violates HTML5 section 4.2.5.2): https://support.google.com/programmable-search/answer/1626955?hl=en -->
+<meta name="thumbnail" content="http://example/foo.jpg" />
+
+
+<!--
+https://schema.org/docs/full.html
+Add JSON-LD schema.org for rich content on search engines (optional but recommended).
+Example:
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "postalCode": "98052",
+    "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
+  },
+  "colleague": [
+    "http://www.xyz.edu/students/alicejones.html",
+    "http://www.xyz.edu/students/bobsmith.html"
+  ],
+  "email": "mailto:jane-doe@xyz.edu",
+  "image": "janedoe.jpg",
+  "jobTitle": "Professor",
+  "name": "Jane Doe",
+  "telephone": "(425) 123-4567",
+  "url": "http://www.janedoe.com"
+}
+</script>
+
+
+
+<!-- SITE VERIFICATIONS -->
+
+<!-- https://labs.detectify.com/ -->
+<meta name="detectify-verification" content={detectifyVerification} />
+
+<!-- Facebook App ID: https://developers.facebook.com/docs/sharing/webmasters -->
+<meta name="fb:app_id" content={fbAppId} />
+
+<!-- https://support.google.com/webmasters/answer/9008080?hl=en -->
+<meta name="google-site-verification" content={googleSiteVerification} />
+
+<!-- https://learn.microsoft.com/en-us/bingwebmaster/verifying-wordpress -->
+<meta name="msvalidate.01" content={msValidate01} />
+
+<!-- https://safeweb.norton.com/ -->
+<meta name="norton-safeweb-site-verification" content={nortonSafeSiteVerification} />
+
+<!-- https://support.wix.com/en/article/verifying-your-domain-with-pinterest -->
+<meta name="p:domain_verify" content={pinterestDomainVerify} />
+
+<!-- https://www.mywot.com/wiki/index.php/Verify_your_website -->
+<meta name="wot-verification" content={wotVerification} />
+
+<!-- https://yandex.ru/support/webmaster/en/?id=995300 -->
+<meta name="yandex-verification" content={yandexVerification} />
+
+
+
+<!-- OTHER PROPOSALS -->
+
+<!-- IAB Tech Lab appstore tags: https://iabtechlab.com/demystifying-app-ads-txt -->
+<meta name="appstore:bundle_id" content={appStoreBundleID} />
+<meta name="appstore:developer_url" content={developerURL} />
+<meta name="appstore:store_id" content={storeID} />
+
+
+<!-- https://brittlebit.org/specifications/html-meta-audience/specification-for-html-meta-element-with-name-value-audience.html -->
+<meta name="audience" content={audience} />
+
+
+<!-- https://faq.frontendnet.work/metatags/Miscellaneous/bitcoin https://bitcointalk.org/index.php?topic=140257.0 -->
+<meta name="bitcoin" content={bitcoin} />
+
+
+<!-- Highwire Press tags: https://scholar.google.com/intl/en/scholar/inclusion.html#indexing https://openequella.github.io/guides/DiscoverabilityGuide.html -->
+<meta name="citation_author" content={author} />
+<meta name="citation_conference_title" content={conferenceTitle} />
+<meta name="citation_dissertation_institution" content={dissertationInstitution} />
+<meta name="citation_firstpage" content={firstPage} />
+<meta name="citation_isbn" content={isbn} />
+<meta name="citation_issn" content={issn} />
+<meta name="citation_issue" content={issue} />
+<meta name="citation_journal_title" content={journalTitle} />
+<meta name="citation_lastpage" content={lastPage} />
+<meta name="citation_pdf_url" content={pdfURL} />
+<meta name="citation_publication_date" content={datePublication} />
+<meta name="citation_technical_report_institution" content={technicalReportInstitution} />
+<meta name="citation_technical_report_number" content={technicalReportNumber} />
+<meta name="citation_title" content={title} />
+<meta name="citation_volume" content={volume} />
+
+
+<!-- https://arpita.github.io/ContactMetaExtensions -->
+<meta name="contact" content={contact} />
+
+
+<!-- https://brittlebit.org/specifications/html-meta-creator/specification-for-html-meta-element-with-name-value-creator.html -->
+<meta name="creator" content={contentCreator} />
+
+
+<!-- Dublin Core Terms: https://www.dublincore.org/specifications/dublin-core/dcmi-terms -->
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<meta name="dcterms.abstract" content={abstract} />
+<meta name="dcterms.accessRights" content={accessRights} />
+<meta name="dcterms.accrualMethod" content={accrualMethod} />
+<meta name="dcterms.accrualPeriodicity" content={accrualPeriodicity} />
+<meta name="dcterms.accrualPolicy" content={accrualPolicy} />
+<meta name="dcterms.alternative" content={alternative} />
+<meta name="dcterms.audience" content={audience} />
+<meta name="dcterms.available" content={available} />
+<meta name="dcterms.bibliographicCitation" content={bibliographicCitation} />
+<meta name="dcterms.conformsTo" content={conformsTo} />
+<meta name="dcterms.contributor" content={contributor} />
+<meta name="dcterms.coverage" content={coverage} />
+<meta name="dcterms.created" content={created} />
+<meta name="dcterms.creator" content={author} />
+<meta name="dcterms.date" content={datePublication} />
+<meta name="dcterms.dateAccepted" content={dateAccepted} />
+<meta name="dcterms.dateCopyrighted" content={dateCopyrighted} />
+<meta name="dcterms.dateSubmitted" content={dateSubmitted} />
+<meta name="dcterms.description" content={description} />
+<meta name="dcterms.educationLevel" content={educationLevel} />
+<meta name="dcterms.extent" content={extent} />
+<meta name="dcterms.format" content={format} />
+<meta name="dcterms.hasFormat" content={hasFormat} />
+<meta name="dcterms.hasPart" content={hasPart} />
+<meta name="dcterms.hasVersion" content={hasVersion} />
+<meta name="dcterms.identifier" content={id} />
+<meta name="dcterms.instructionalMethod" content={instructionalMethod} />
+<meta name="dcterms.isFormatOf" content={isFormatOf} />
+<meta name="dcterms.isPartOf" content={isPartOf} />
+<meta name="dcterms.isReferencedBy" content={isReferencedBy} />
+<meta name="dcterms.isReplacedBy" content={isReplacedBy} />
+<meta name="dcterms.isRequiredBy" content={isRequiredBy} />
+<meta name="dcterms.issued" content={issued} />
+<meta name="dcterms.isVersionOf" content={isVersionOf} />
+<meta name="dcterms.language" content={language} />
+<meta name="dcterms.license" content={license} />
+<meta name="dcterms.mediator" content={mediator} />
+<meta name="dcterms.medium" content={medium} />
+<meta name="dcterms.modified" content={modified} />
+<meta name="dcterms.provenance" content={provenance} />
+<meta name="dcterms.publisher" content={publisher} />
+<meta name="dcterms.references" content={references} />
+<meta name="dcterms.relation" content={relation} />
+<meta name="dcterms.replaces" content={replaces} />
+<meta name="dcterms.requires" content={requires} />
+<meta name="dcterms.rights" content={rights} />
+<meta name="dcterms.rightsHolder" content={rightsHolder} />
+<meta name="dcterms.source" content={source} />
+<meta name="dcterms.spatial" content={spatial} />
+<meta name="dcterms.subject" content={subject} />
+<meta name="dcterms.tableOfContents" content={tableOfContents} />
+<meta name="dcterms.temporal" content={temporal} />
+<meta name="dcterms.title" content={title} />
+<meta name="dcterms.type" content={type} />
+<meta name="dcterms.valid" content={valid} />
+
+
+<!-- Credits the designer(s) responsible for the visual presentation of a website: https://sites.google.com/site/metadesignerspec -->
+<meta name="designer" content={designer} />
+
+
+<!-- EssayDirectory custom description: https://essaydirectory.com/privacy-terms/#EssayDirectory_MetaExtension -->
+<meta name="EssayDirectory" content={essayDirectory} />
+
+
+<!--
+https://brittlebit.org/specifications/html-meta-format-print/specification-for-html-meta-element-with-name-value-format-print.html
+Example: A4
+-->
+<meta name="format-print" content={formatPrint} />
+
+
+<!--
+https://en.wikipedia.org/wiki/ICBM_address
+Example: 47.0667, 15.4500
+-->
+<meta name="ICBM" content={location} />
+
+
+<!-- https://brittlebit.org/specifications/html-meta-keywords-not/specification-for-html-meta-element-with-name-value-keywords-not.html -->
+<meta name="keywords-not" content={keywordsNot} />
+
+
+<!-- License -->
+
+<!-- https://faq.frontendnet.work/metatags/Miscellaneous/license -->
+<meta name="license" content={license} />
+
+<!-- https://faq.frontendnet.work/metatags/Miscellaneous/licenseuri -->
+<meta name="license:uri" content={licenseUri} />
+
+
+<!-- A vendor-neutral version of apple-mobile-web-app-capable -->
+<meta name="mobile-web-app-capable" content="yes" />
+
+
+<!-- Prevent Microsoft software from adding content to the web page: https://brittlebit.org/specifications/html-meta-mssmarttagspreventparsing/specification-for-html-meta-element-with-name-value-mssmarttagspreventparsing.html -->
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+
+<!--
+https://brittlebit.org/specifications/html-meta-nonfiction/specification-for-html-meta-element-with-name-value-nonfiction.html
+Example: true
+-->
+<meta name="nonfiction" content={nonFiction} />
+
+
+<!-- Original source of the document: https://doc.ohreally.nl/metatag-origin -->
+<meta name="origin" content={source} />
+
+
+<!-- Enable experimental browser features: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/public/common/origin_trials/origin_trials_token_structure.md -->
+<meta name="origin-trials" content={originTrials} />
+
+
+<!-- Only when the page uploaded two or more times with the same `last-modification` date: https://brittlebit.org/specifications/html-meta-page-version/specification-for-html-meta-element-with-name-value-page-version.html -->
+<meta name="page-version" content={version} />
+
+
+<!-- Signify expertise as judged by an authority -->
+
+<!-- https://brittlebit.org/specifications/html-meta-pro/specification-for-html-meta-element-with-name-value-pro.html -->
+<meta name="pro" content={pro} />
+
+<!-- https://brittlebit.org/specifications/html-meta-pro-auth/specification-for-html-meta-element-with-name-value-pro-auth.html -->
+<meta name="pro-auth" content={proAuth}  />
+
+<!-- https://brittlebit.org/specifications/html-meta-pro-auth-field/specification-for-html-meta-element-with-name-value-pro-auth-field.html -->
+<meta name="pro-auth-field" content={proAuthField}  />
+
+<!-- https://brittlebit.org/specifications/html-meta-pro-auth-fragment/specification-for-html-meta-element-with-name-value-pro-auth-fragment.html -->
+<meta name="pro-auth-fragment" content={proAuthFragment}  />
+
+
+<!-- Redundant with Microdata (https://html.spec.whatwg.org/multipage/microdata.html#licensing-works): https://sites.google.com/site/metarightsstandard/ -->
+<meta name="rights-standard" content={rightsStandard} />
+
+
+<!-- https://wiki.whatwg.org/wiki/RequestID -->
+<meta name="rqid" content={requestID} />
+
+
+<!--
+https://brittlebit.org/specifications/html-meta-subject-datetime/specification-for-html-meta-element-with-name-value-subject-datetime.html
+Example: 2025--infinite
+-->
+<meta name="subject-datetime" content={dateTime} />
+
+
+<!-- https://brittlebit.org/specifications/html-meta-subject-system/specification-for-html-meta-element-with-name-value-subject-system.html -->
+<meta name="subject-system" content={systemClassification} />
+
+
+<!-- https://github.com/google/webpackager/blob/main/docs/supported_media.md -->
+<meta name="supported-media" content={supportedMedia} />
+
+
+<!-- Nobody recognizes this: https://brittlebit.org/specifications/html-meta-topper-topper-major-topper-minor/specification-for-html-meta-element-with-name-values-topper-topper-major-and-topper-minor.html -->
+<meta name="topper" content={topper} />
+<meta name="topper-major" content={topperMajor} />
+<meta name="topper-minor" content={topperMinor} />
+
+
+<!-- Translator of the page: https://doc.ohreally.nl/metatag-translator -->
+<meta name="translator" name={translator} />
+
+
+<!-- https://github.com/dvorapa/meta-version -->
+<meta name="version" content={version} />
+
+
+<!-- ZOOM Search Engine tags: https://www.zoomsearchengine.com/zoom/zoommeta.html -->
+
+<meta name="ZOOMCATEGORY" content={zoomCategory} />
+<meta name="ZOOMDESCRIPTION" content={description} />
+
+<!-- Resolutions: 64x64 to 100x80: https://www.zoomsearchengine.com/zoom/support/faq_plugins_image_layout.html -->
+<meta name="ZOOMIMAGE" content={zoomImage} />
+<meta name="ZOOMPAGEBOOST" content={zoomPageBoost} />
+<meta name="ZOOMTITLE" content={title} />
+
+<!-- Additional keyword for ZOOM-->
+<meta name="ZOOMWORDS" content={zoomWords} />
+
+
+<!-- Only set this tag if the page is restricted to adults: https://www.rtalabel.org/index.php?content=howto -->
+<!-- <meta name="rating" content="RTA-5042-1996-1400-1577-RTA" /> -->
