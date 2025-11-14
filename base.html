@@ -99,12 +99,11 @@
 
 
 <!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content={appleMobileWebAppStatusBarStyle} />
 <meta name="apple-mobile-web-app-title" content={name} />
 
-
-<!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
 <meta name="format-detection" content="telephone=no" />
 
 
@@ -114,6 +113,7 @@ https://developer.apple.com/design/human-interface-guidelines/app-icons#Specific
 -->
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="1024x1024" type="image/png" />
 <link rel="apple-touch-startup-image" href="/launch.png" />
+
 
 <!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html -->
 <link rel="mask-icon" href="/website_icon.svg" color={maskIconColor} type="image/svg+xml" />
@@ -209,7 +209,7 @@ The reference specifies the `twitter:player` tags; add them only if the page has
 
 <!--
 https://schema.org/docs/full.html
-Add JSON-LD schema.org for rich content on search engines (optional but recommended).
+Add JSON-LD schema.org for rich content on search engines (optional but recommended). It can be placed in the body too.
 If the project is made with TypeScript, a library like `schema-dts` is recommended: https://github.com/google/schema-dts
 Example:
 -->
