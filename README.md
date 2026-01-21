@@ -19,7 +19,8 @@ See [`base.html`](./base.html).
 
 Of course, many web pages do not need the Highwire Press or the Bitcoin address meta tags; use only the necessary ones.
 
-All tags are written in XHTML format to ensure compatibility with modern frameworks and template engines, which often require every tag to be explicitly closed. Although HTML5 technically doesn't support self-closing syntax, it tolerates the trailing slash and simply ignores it, allowing the document to render without errors.
+All tags are written in XHTML format to ensure compatibility with modern frameworks and template engines, which often require every tag to be explicitly closed.
+Although HTML5 technically doesn't support self-closing syntax, it tolerates the trailing slash and simply ignores it, allowing the document to render without errors.
 
 If you find missing or redundant tags, please feel free to contribute.
 
