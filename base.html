@@ -3,11 +3,19 @@
 <meta charset="utf-8" />
 
 
-<!-- CSS Device Adaptation specification: https://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport -->
+<!--
+CSS Device Adaptation specification:
+https://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport
+-->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-<!-- HTML Standard metadata names: https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name#meta_names_defined_in_the_html_specification -->
+<!--
+HTML Standard metadata names:
+https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name#meta_names_defined_in_the_html_specification
+-->
 
 <meta name="application-name" content={name} />
 
@@ -27,7 +35,11 @@
 <meta name="theme-color" content={themeLight} media="(prefers-color-scheme: light)" />
 
 
-<!-- Link rel: https://html.spec.whatwg.org/multipage/links.html#linkTypes https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel -->
+<!--
+Link rel:
+https://html.spec.whatwg.org/multipage/links.html#linkTypes
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel
+-->
 
 <link rel="alternate" hreflang={hrefLang} href={hrefAlternate} />
 
@@ -66,13 +78,19 @@
 <!-- https://www.hixie.ch/specs/pingback/pingback -->
 <link ref="pingback" href={hrefPingback} />
 
-<!-- Multiple `preconnect` tags are allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preconnect -->
+<!--
+Multiple `preconnect` tags are allowed:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preconnect
+-->
 <link rel="preconnect" href={hrefPreconnect} />
 
 <!-- Multiple `prefetch` tags are allowed -->
 <link rel="prefetch" href={hrefPrefetch} />
 
-<!-- Multiple `preload` tags are allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload -->
+<!--
+Multiple `preload` tags are allowed:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload
+-->
 <link rel="preload" href={hrefPreload} as="script" />
 
 <link rel="prev" href={hrefPrev} />
@@ -87,7 +105,11 @@
 <link rel="terms-of-service" href={hrefTermsOfService} />
 
 
-<!-- Title: https://html.spec.whatwg.org/multipage/semantics.html#the-title-element https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title -->
+<!--
+Title:
+https://html.spec.whatwg.org/multipage/semantics.html#the-title-element
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title
+-->
 <title>{title}</title>
 
 
@@ -203,7 +225,10 @@ The reference specifies the `twitter:player` tags; add them only if the page has
 <!-- https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag -->
 <meta name="googlebot-news" content={googleBotNews} />
 
-<!-- It is recommended to use JSON-LD instead (also, this tag violates HTML5 section 4.2.5.2): https://support.google.com/programmable-search/answer/1626955?hl=en -->
+<!--
+It is recommended to use JSON-LD instead (also, this tag violates HTML5 section 4.2.5.2):
+https://support.google.com/programmable-search/answer/1626955?hl=en
+-->
 <meta name="thumbnail" content="http://example/foo.jpg" />
 
 
@@ -271,7 +296,8 @@ Example:
 
 <!--
 App Links Metadata: https://developers.facebook.com/docs/applinks/metadata-reference
-Enables deep linking into mobile apps from web content. When clicking a URL, it opens the app (if installed) instead of the website.
+Enables deep linking into mobile apps from web content.
+When clicking a URL, it opens the app (if installed) instead of the website.
 Example: a documentation URL:
 -->
 
@@ -326,11 +352,18 @@ Example: a documentation URL:
 <meta name="audience" content={audience} />
 
 
-<!-- https://faq.frontendnet.work/metatags/Miscellaneous/bitcoin https://bitcointalk.org/index.php?topic=140257.0 -->
+<!--
+https://faq.frontendnet.work/metatags/Miscellaneous/bitcoin
+https://bitcointalk.org/index.php?topic=140257.0
+-->
 <meta name="bitcoin" content={bitcoin} />
 
 
-<!-- Highwire Press tags: https://scholar.google.com/intl/en/scholar/inclusion.html#indexing https://openequella.github.io/guides/DiscoverabilityGuide.html -->
+<!--
+Highwire Press tags:
+https://scholar.google.com/intl/en/scholar/inclusion.html#indexing
+https://openequella.github.io/guides/DiscoverabilityGuide.html
+-->
 <meta name="citation_author" content={author} />
 <meta name="citation_conference_title" content={conferenceTitle} />
 <meta name="citation_dissertation_institution" content={dissertationInstitution} />
@@ -356,7 +389,10 @@ Example: a documentation URL:
 <meta name="creator" content={contentCreator} />
 
 
-<!-- Dublin Core Terms: https://www.dublincore.org/specifications/dublin-core/dcmi-terms -->
+<!--
+Dublin Core Terms:
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms
+-->
 
 <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
 
@@ -417,11 +453,17 @@ Example: a documentation URL:
 <meta name="dcterms.valid" content={valid} />
 
 
-<!-- Credits the designer(s) responsible for the visual presentation of a website: https://sites.google.com/site/metadesignerspec -->
+<!--
+Credits the designer(s) responsible for the visual presentation of a website:
+https://sites.google.com/site/metadesignerspec
+-->
 <meta name="designer" content={designer} />
 
 
-<!-- EssayDirectory custom description: https://essaydirectory.com/privacy-terms/#EssayDirectory_MetaExtension -->
+<!--
+EssayDirectory custom description:
+https://essaydirectory.com/privacy-terms/#EssayDirectory_MetaExtension
+-->
 <meta name="EssayDirectory" content={essayDirectory} />
 
 
@@ -456,7 +498,10 @@ Example: 47.0667, 15.4500
 <meta name="mobile-web-app-capable" content="yes" />
 
 
-<!-- Prevent Microsoft software from adding content to the web page: https://brittlebit.org/specifications/html-meta-mssmarttagspreventparsing/specification-for-html-meta-element-with-name-value-mssmarttagspreventparsing.html -->
+<!--
+Prevent Microsoft software from adding content to the web page:
+https://brittlebit.org/specifications/html-meta-mssmarttagspreventparsing/specification-for-html-meta-element-with-name-value-mssmarttagspreventparsing.html
+-->
 <meta name="MSSmartTagsPreventParsing" content="true" />
 
 
@@ -467,15 +512,24 @@ Example: true
 <meta name="nonfiction" content={nonFiction} />
 
 
-<!-- Original source of the document: https://doc.ohreally.nl/metatag-origin -->
+<!--
+Original source of the document:
+https://doc.ohreally.nl/metatag-origin
+-->
 <meta name="origin" content={source} />
 
 
-<!-- Enable experimental browser features: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/public/common/origin_trials/origin_trials_token_structure.md -->
+<!--
+Enable experimental browser features:
+https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/public/common/origin_trials/origin_trials_token_structure.md
+-->
 <meta name="origin-trials" content={originTrials} />
 
 
-<!-- Only when the page uploaded two or more times with the same `last-modification` date: https://brittlebit.org/specifications/html-meta-page-version/specification-for-html-meta-element-with-name-value-page-version.html -->
+<!--
+Only when the page uploaded two or more times with the same `last-modification` date:
+https://brittlebit.org/specifications/html-meta-page-version/specification-for-html-meta-element-with-name-value-page-version.html
+-->
 <meta name="page-version" content={version} />
 
 
@@ -494,7 +548,10 @@ Example: true
 <meta name="pro-auth-fragment" content={proAuthFragment}  />
 
 
-<!-- Redundant with Microdata (https://html.spec.whatwg.org/multipage/microdata.html#licensing-works): https://sites.google.com/site/metarightsstandard/ -->
+<!--
+Redundant with Microdata (https://html.spec.whatwg.org/multipage/microdata.html#licensing-works):
+https://sites.google.com/site/metarightsstandard/
+-->
 <meta name="rights-standard" content={rightsStandard} />
 
 
@@ -517,7 +574,10 @@ Example: 2025--infinite
 <meta name="supported-media" content={supportedMedia} />
 
 
-<!-- Nobody recognizes this: https://brittlebit.org/specifications/html-meta-topper-topper-major-topper-minor/specification-for-html-meta-element-with-name-values-topper-topper-major-and-topper-minor.html -->
+<!--
+Nobody recognizes this:
+https://brittlebit.org/specifications/html-meta-topper-topper-major-topper-minor/specification-for-html-meta-element-with-name-values-topper-topper-major-and-topper-minor.html
+-->
 <meta name="topper" content={topper} />
 <meta name="topper-major" content={topperMajor} />
 <meta name="topper-minor" content={topperMinor} />
