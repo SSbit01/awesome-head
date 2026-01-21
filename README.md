@@ -11,7 +11,7 @@
       |   |
 ```
 
-The best and most up-to-date compilation of HTML head tags.
+The best and most up-to-date compilation of HTML head tags for SEO and rich previsualizations.
 
 ## List
 
@@ -30,8 +30,8 @@ If you find missing or redundant tags, please feel free to contribute.
 - <https://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329>
 - <https://wiki.whatwg.org/wiki/MetaExtensions>
 
-## License ??
+## License
 
-Use it, it's free.
+It is released into the public domain.
 
-Originally created by [*Stefan Samson* (SSbit01)](https://ssbit01.github.io).
+Created by [*Stefan Samson* (SSbit01)](https://ssbit01.github.io).
